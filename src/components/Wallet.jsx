@@ -16,7 +16,6 @@ const Wallet = () => {
   const handleConnectWallet = () => {
     connectWallet()
       .then((response) => {
-        console.log(response);
         if (response?.status === "error") {
           setErrorMessage(response?.message);
           handleSnackBar(true);
@@ -37,14 +36,14 @@ const Wallet = () => {
 
   return (
     <>
-      { snackBarOpen ? <Snackbar
-       anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         open={snackBarOpen}
-        severity={errorMessage ? 'error' : 'success'}
+        severity={errorMessage ? "error" : "success"}
         autoHideDuration={4000}
         onClose={() => handleSnackBar(false)}
         message={errorMessage}
-      /> :<div></div>}
+      />
       <Header title="Wallet" action={action} />
       <div>
         {walletAddress && <p>Connected with address: {walletAddress}</p>}

@@ -5,7 +5,6 @@ const UpdatedTime = ({ time }) => {
   const parseDate = (timestamp) => {
     if (timestamp) {
       const date = new Date(timestamp).toISOString().split("T")[0];
-      console.log(date);
       return date;
     }
   };

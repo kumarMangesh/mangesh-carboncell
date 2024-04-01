@@ -21,12 +21,18 @@ const AboutMe = () => {
           Till now i have contributed in two startups and learned a lot.
         </Typography>
         <Typography variant="body1">
-          Worked as a sole frontend developer and founding member for two
-          projects.
+          Worked as a sole frontend developer and built two
+          projects from scratch.
         </Typography>
-        <br/>
+        <br />
         <Typography variant="body1">
           Love Science, and eager to know how things works.
+        </Typography>
+
+        <br />
+        <Typography variant="body2">
+          Here is the source code of this project{" "}
+          <a href="https://github.com/kumarMangesh/mangesh-carboncell">github link</a>
         </Typography>
       </Box>
     </>
